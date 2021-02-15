@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Project: Reciepe book</title>
+        <style>
+            #rest{
+                text-align:center;
+                font-family:cursive;
+                margin-bottom:0px;
+                position:absolute;
+                color:black;
+            }
+            #flowers{
+                object-fit: cover;
+                width: 1400px;
+                height: 100px;
+            }
+            .table{
+                font-family:monospace;
+                font-size:16px;
+                color:white;
+                position:absolute;
+                bottom:-170px;
+                right:65px;
+            }
+            #reciepeLink{
+                font-family:cursive;
+                font-size:15px;
+                color:rgb(184, 228, 25);
+                position:absolute;
+                bottom:-210px;
+                right:490px;
+                font-weight:bold;
+            }
+            #reciepeLinkPh{
+                font-family:cursive;
+                font-size:15px;
+                position:absolute;
+                bottom:-250px;
+                right:365px;
+            }
+            #processLink{
+                font-family:cursive;
+                font-size:15px;
+                color:rgb(184, 228, 25);
+                position:absolute;
+                bottom:-210px;
+                right:200px;
+                font-weight:bold;
+            }
+            #processLinkPh{
+                font-family:cursive;
+                font-size:15px;
+                position:absolute;
+                bottom:-250px;
+                right:70px;
+            }
+            #bonappetit{
+                font-family:serif ;
+                font-size:20px;
+                color:white;
+                position:absolute;
+                bottom:-370px;
+                right:450px;
+            }
+            #withL{
+                font-family:serif;
+                font-size:20px;
+                color:white;
+                position:absolute;
+                bottom:-370px;
+                right:80px;
+            }
+            #RecHelp{
+                object-fit: cover;
+                width: 1400px;
+                height: 100px;
+            }
+            #omelet{
+                object-fit: cover;
+                width: 1400px;
+                height: 900px;
+            }
+            #cooking{
+                object-fit: cover;
+                height: 400px;
+            }
+            .foodname{
+                position:absolute;
+                font-family:cursive;
+                color:white;
+            }
+            
+            #roast{
+                position:absolute;
+                border:10px double aqua;
+                background-color: white;
+                color:black;
+                font-family:monospace;
+                font-size:20px;
+                bottom:-1450px;
+                right:900px;
+            }
+           #Spagetti{
+                position:absolute;
+                border:10px double aqua;
+                background-color: white;
+                color:black;
+                font-family:monospace;
+                font-size:20px;
+                bottom:-2150px;
+                right:100px;
+            }
+            #Omelet{
+                position:absolute;
+                border:10px double aqua;
+                background-color: white;
+                color:black;
+                font-family:monospace;
+                font-size:20px;
+                bottom:-3220px;
+                right:970px;
+            }
+            #cookingVideo{
+                position:absolute;
+                border:10px inset rgb(184, 228, 25);
+                background-color: white;
+                color:black;
+                font-family:monospace;
+                font-size:20px;
+                bottom:-3760px;
+                right:40px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1 id="rest">Restaurant -Amir Corp-</h1>
+        <img id="flowers"src="https://идея-малого-бизнеса.рф/wp-content/uploads/2019/09/134.jpg" width="1400px">
+        <img id="menu" src="https://cdn.pixabay.com/photo/2018/03/07/18/42/menu-3206748_1280.jpg" width="1400px">
+        <div class="table">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Photo</th>
+                        <th>Food</th>
+                        <th>Price(tg)</th>
+                        <th>Chef</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td ><img src="https://img1.russianfood.com/dycontent/images_upl/59/big_58829.jpg" width="160px"></td>
+                        <td>Homemade-roast</td>
+                        <td>_800_</td>
+                        <td>Bjorn Franzen</td>
+                    </tr>
+                    <tr>
+                        <td ><img src="https://img1.russianfood.com/dycontent/images_upl/355/big_354203.jpg" width="160px"></td>
+                        <td>Spagetti with eggs</td>
+                        <td>_970_</td>
+                        <td>Joan Roca</td>
+                    </tr>
+                    <tr>
+                        <td ><img src="https://img1.russianfood.com/dycontent/images_upl/479/big_478900.jpg"  width="160px"></td>
+                        <td>Omelet on fermented <br>baked milk,with<br> sausages and <br>vegetables</td>
+                        <td>_600_</td>
+                        <td>David Munons</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <a href="#reciepe" id="reciepeLink">RECIEPE BOOK</a>
+        <a href="#reciepe"  id="reciepeLinkPh"><img src="https://mir-s3-cdn-cf.behance.net/projects/max_808/60dc3135326927.Y3JvcCwxMjYyLDk4Niw0Myww.png" width="120px" height="80px"></a>
+        <a href="#cooking" id="processLink">COOKING PROCESS</a>
+        <a href="#cooking"  id="processLinkPh"><img src="https://www.aareinsight.com/wp-content/uploads/sites/95/2017/11/a-guide-to-proper-etiquette-for-sellers-cooking.jpg" width="120px"  height="80px"></a>
+        <p id="bonappetit">Enjoy your meal!!!</p>
+        <p id="withL">With Love : <a href="#rest">AMIR CORP</a></p>
+        <h1 class="foodname" id="reciepe">Reciepe Book</h1>
+        <img id="RecHelp" src="https://littleletterslinked.com/wp-content/uploads/2019/05/a-74.jpg" width="1400px">
+        <h1 class="foodname">Homemade-roast</h1>
+        <img src="https://www.foodhere.ru/wp-content/uploads/2018/10/zharkoe.jpg" width="1400px">
+        <div id="roast">
+            <h2>Products</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Ingredient</th>
+                        <th>Quantity</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Beef</td>
+                        <td>0.5kg</td>
+                    </tr>
+                    <tr>
+                        <td>Potatoes</td>
+                        <td>3pcs</td>
+                    </tr>
+                    <tr>
+                        <td>Carrots</td>
+                        <td>2pcs</td>
+                    </tr>
+                    <tr>
+                        <td>Bulb onions</td>
+                        <td>1pc</td>
+                    </tr>
+                    <tr>
+                        <td>Greens</td>
+                        <td>to taste</td>
+                    </tr>
+                    <tr>
+                        <td>Water (or broth)</td>
+                        <td>200ml</td>
+                    </tr>
+                    <tr>
+                        <td>Roast seasoning</td>
+                        <td>to taste</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <h1 class="foodname">Spaghetti with eggs</h1>
+        <img src="https://graphics8.nytimes.com/images/2015/06/08/dining/08PASTAFRIEDEGG/08PASTAFRIEDEGG-superJumbo.jpg" width="1400px">
+        <div id="Spagetti">
+            <h2>Products</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Ingredient</th>
+                        <th>Quantity</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Spaghetti</td>
+                        <td>150g</td>
+                    </tr>
+                    <tr>
+                        <td>Eggs</td>
+                        <td>2pcs</td>
+                    </tr>
+                    <tr>
+                        <td>Bulb onions</td>
+                        <td>1pc</td>
+                    </tr>
+                    <tr>
+                        <td>Ketchup</td>
+                        <td>2tbsp.spoons</td>
+                    </tr>
+                    <tr>
+                        <td>Salt</td>
+                        <td>1/2tsp</td>
+                    </tr>
+                    <tr>
+                        <td>Ground black pepper</td>
+                        <td>to taste</td>
+                    </tr>
+                    <tr>
+                        <td>Vegetable oil</td>
+                        <td>3tbsp.spoons</td>
+                    </tr>
+                    <tr>
+                        <td>Ground paprika</td>
+                        <td>1/3tsp</td>
+                    </tr>
+                    <tr>
+                        <td>Fresh parsley</td>
+                        <td>for garnish</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <h1 class="foodname">Omelet on fermented baked milk</h1>
+        <img id="omelet" src="https://ok-multivarka.ru/wp-content/uploads/2019/08/%D0%BE%D0%BC%D0%BB%D0%B5%D1%82-%D1%81-%D0%BA%D0%BE%D0%BB%D0%B1%D0%B0%D1%81%D0%BE%D0%B9-%D0%B8-%D0%BF%D0%BE%D0%BC%D0%B8%D0%B4%D0%BE%D1%80%D0%B0%D0%BC%D0%B8-800x600.jpg" width="1400px">
+        <div id="Omelet">
+            <h2>Products</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Ingredient</th>
+                        <th>Quantity</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Eggs</td>
+                        <td>2pcs</td>
+                    </tr>
+                    <tr>
+                        <td>Ryazhenka</td>
+                        <td>120ml</td>
+                    </tr>
+                    <tr>
+                        <td>Sausages</td>
+                        <td>100g</td>
+                    </tr>
+                    <tr>
+                        <td>KetFrozen vegetables</td>
+                        <td>70gchup</td>
+                    </tr>
+                    <tr>
+                        <td>Red onion</td>
+                        <td>50g</td>
+                    </tr>
+                    <tr>
+                        <td>Garlic</td>
+                        <td>1clove</td>
+                    </tr>
+                    <tr>
+                        <td>Fresh dill</td>
+                        <td>10g</td>
+                    </tr>
+                    <tr>
+                        <td>Salt</td>
+                        <td>to taste</td>
+                    </tr>
+                    <tr>
+                        <td>Ground black pepper</td>
+                        <td>to taste</td>
+                    </tr>
+                    <tr>
+                        <td>Vegetable oil</td>
+                        <td>20-25ml</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <h1 class="foodname">Cooking process</h1>
+        <img id="cooking" src="https://www.aareinsight.com/wp-content/uploads/sites/95/2017/11/a-guide-to-proper-etiquette-for-sellers-cooking.jpg" width="1400px">
+        <ul id="cookingVideo">
+            <li>Homemade-roast                   <a href="https://www.youtube.com/watch?v=o1hY4WfCqoA" target="_blank">click to view</a></li>
+            <li>Spaghetti with eggs              <a href="https://www.youtube.com/watch?v=qFVkmoZ38Y4" target="_blank">click to view</a></li>
+            <li>Omelet on fermented baked milk   <a href="https://www.youtube.com/watch?v=L3j_BLWqJSU" target="_blank">click to view</a></li>
+        </ul>
+    </body>
+</html>
