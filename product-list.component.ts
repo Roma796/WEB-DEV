@@ -1,16 +1,21 @@
-import { Component } from '@angular/core';
-
-import { products } from '../products';
+import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
+import { Product } from 'src/assets/product';
+import {product} from '../../../assets/products';
 
 @Component({
   selector: 'app-product-list',
   templateUrl: './product-list.component.html',
   styleUrls: ['./product-list.component.css']
 })
-export class ProductListComponent {
-  products = products;
 
-  share(link:string):void {
-    window.open('https://t.me/share/url?url=Roman Store&text='+link);
+export class ProductListComponent implements OnInit {
+  products!:Product[];
+  constructor(private route: ActivatedRoute,) { }
+
+  ngOnInit(): void {
+    const routeParams = this.route.snapshot.paramMap;
+    const categoryIdFromRoute = Number(routeParams.get('categoryId'));
+    this.products = product.filter(products => products.categoryId === categoryIdFromRoute);
   }
 }

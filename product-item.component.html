@@ -1,0 +1,35 @@
+<div *ngIf="!products.isRemoved">
+<div class='main'>
+<p *ngIf="products.name" class="productName">
+        <a href="{{products.link}}" class='nameStyle'>{{ products.name }}</a> 
+</p>
+    <div class="flex-container">
+        <div>
+            <p *ngIf="products.img" class="productImage">
+               <a href="{{products.link}}"> <img src="{{ products.img }}" alt="" width="20%"> </a>
+            </p>
+        </div>
+        <div class="right">
+            <p *ngIf="products.description" class="productDescription">
+                Description: <br><br> {{ products.description }}
+            </p>
+            <p *ngIf="products.price" class="productPrice">
+                Price: {{ products.price }}
+            </p>
+            <div *ngIf="products.like" class="productLike">
+                Like: {{ products.like}}
+                <button (click)="likeItem()" class="likeButt"> <img src="{{likeImage}}" alt="" class='likeImg'></button>
+                
+            </div> 
+            <p *ngIf="products.rating" class="productRating">
+                Rating: {{ products.rating }}/10
+            </p>    
+           
+            <button (click)="share(products.link)" class="productLink">
+                    Share
+            </button>
+            <button (click)="deleteItem()" class="Delete">
+                Delete this item
+            </button>
+        </div>
+</div></div></div>

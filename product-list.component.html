@@ -1,34 +1,32 @@
-<h2> 
-    Products
-</h2>
 
-<div *ngFor="let product of products">
-    <h3>
-        <a [title] = "product.name + ' details' " href="{{product.link}}" target="_blanck"> 
-            {{ product.name }} 
-        </a>
-    </h3>
+<h1>Products </h1>
 
-    <p *ngIf="product.img" class="img">
-        <img src="{{ product.img }}" alt="image" width="300"> 
-    </p>
-
-    <p *ngIf="product.description">
-        Description: {{ product.description }}
-    </p>
-
-    <p *ngIf="product.rating">
-        Rating: {{ product.rating }}
-    </p>
-    
-    <div *ngIf="product.link">
-    <button (click)="share(product.link)">
-        Share
-    </button>
+<div *ngFor="let product of products" class="main">
+    <div *ngIf="!product.isRemoved">
+<p *ngIf="product.name" class="productName" routerLink='/categories/{{product.categoryId}}/products/{{product.productId}}'>
+            {{ product.name }}
+        </p>
+<div class="flex-container">
+    <div>
+        <p *ngIf="product.img" class="productImage">
+           <a routerLink='/categories/{{product.categoryId}}/products/{{product.productId}}'><img src="{{ product.img }}" alt="" width="20%"> </a> 
+        </p>
     </div>
-
-    <app-product-alerts
-        [product]="product">
-    </app-product-alerts>
-
+    <div class="right">
+        <p *ngIf="product.description" class="productDescription">
+            Description: <br><br> {{ product.description }}
+        </p>
+        <p *ngIf="product.price" class="productPrice">
+            Price: {{ product.price }}
+        </p>
+        <p *ngIf="product.rating" class="productRating">
+            Rating: {{ product.rating }}/10
+        </p>    
+        <a class="moreInfo" routerLink='/categories/{{product.categoryId}}/products/{{product.productId}}' >Details
+        </a>
+        <p>
+        *
+        </p>
+    </div>
+</div> </div>
 </div>

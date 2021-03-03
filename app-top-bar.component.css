@@ -1,0 +1,35 @@
+.main-menu{
+    display:flex;
+    background-color: #1976d2;
+    margin-left:-0.6%;
+    margin-top:-2.1%;
+    width:102%;
+}
+.nameStore{
+    color:white;
+    padding:3%;
+    font-size:260%;
+    background-color: #1976d2;
+    border:1px solid #1976d2;
+    outline:none;
+}
+.checkout{
+    background-color: white;
+    position:absolute;
+    width:11%;
+    height:9%;
+    margin-left:67%;
+    background-image: url('https://image.flaticon.com/icons/png/512/102/102655.png');
+    background-size:32%;
+    background-repeat: no-repeat;
+    outline:none;
+    margin-top:3.2%;
+    border:1px solid black;
+    border-radius:3px;
+}
+.checkouttext{
+    font-family:sans-serif;
+    font-size:150%;
+    padding-left:30%;
+    font-weight: bold;
+} 
