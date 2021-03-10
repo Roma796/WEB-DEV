@@ -1,0 +1,11 @@
+<div class="albumsMain">
+      <div class="inputClass">
+            <input type="text" [(ngModel)]="newAlbum" placeholder="New Album" class="inputText">
+            <button (click)="addAlbum()">Add Album</button>   
+      </div>
+      
+      <div *ngFor="let album of albums" class="albums">
+            <a [routerLink]="['/albums', album.id]" class="albumText">{{album.id}}) {{album.title}}</a>
+            <div class="delete"> <button (click)="deleteAlbum(album.id)" >X</button></div>
+      </div>
+</div>
