@@ -1,0 +1,208 @@
+            * {
+                box-sizing: border-box;
+            }
+            .flex-container {
+                display: flex;
+                height:630px;
+                justify-content: flex-start;
+                flex-wrap: wrap;
+            }
+
+            .flex-container > div {
+                margin: 10px;
+                padding: 20px;
+            }
+            #headeR{
+                width:90%;
+                height:40%;
+                margin-left:4.4%;
+                margin-top:-1%;
+            }
+            #LogoMicrosoft{
+                margin-left:0.7%;
+                margin-top:1.5%;
+            }
+            #Microsoft_365{
+                font-family: sans-serif;
+                margin-top:-2%;
+                margin-left:12%;
+                font-size:82%;
+            }
+            #Office{
+                font-family: sans-serif;
+                margin-top:-3.7%;
+                font-size:82%;
+                margin-left: 20.5%;
+            }
+            #Windows{
+                font-family: sans-serif;
+                margin-top:-3.8%;
+                font-size:82%;
+                margin-left: 25.3%;
+            }
+            #Поддержка{
+                font-family: sans-serif;
+                margin-top:-3.8%;
+                font-size:82%;
+                margin-left: 31.5%;
+            }
+            #products{
+                position:absolute;
+                width:11.5%;
+                margin-top:-2.3%;
+                margin-left:69%;
+            }       
+            #searcher{
+                position:absolute;
+                margin-top:-2.3%;
+                margin-left:83%;
+            }
+            #profile{
+                position:absolute;
+                margin-top:-3%;
+                margin-left:85.6%;
+            }
+            #Microsoft365Font{
+                margin-left:10.5%;
+                font-family: sans-serif;
+                font-size: 155%;
+                margin-top:0%;
+                padding-top:22%;
+            }
+            #main{
+                background-color: rgb(231,231,231);
+                width:50%;
+                margin-left:4.5%;
+                height:25%;
+            }
+            #rightSide{
+                position: absolute;
+                margin-left:41%;
+                margin-top:-14.75%;
+            }
+            #Nadpis{
+                font-size:102%;
+                margin-left:-15%;
+                padding:26%;
+                margin-top:-28%;
+            }
+            #footerLeftSide{
+                margin-left:2.9%;
+            }
+            #footerMiddleSide{
+                margin-left:-2%;
+            }
+            #footerMiddleSide2{
+                margin-left:-2%;
+            }
+            #footerRightSide{
+                margin-left:-2%;
+            }
+            #footerLeftSidetext{
+                margin-left:3%;
+                margin-top:-18%;
+                font-size:140%;
+            }
+            #footerLeftSideNotmainText{
+                font-size:75%;
+                margin-top:-7%;
+            }
+            #footerLeftSidetextLink{
+                margin-top:-1%;
+                font-weight: bold;
+                font-size:90%;
+                font-family:monospace;
+                color:rgb(0,105,198);
+            }
+
+            #footerMiddleSideText{
+                margin-left:1.5%;
+                margin-top:-18%;
+                font-size:140%;
+            }
+            #footerMiddleSideNotmainText{
+                font-size:75%;
+                margin-top:-7%;
+            }
+            #footerMiddleSidetextLink{
+                margin-top:-1%;
+                font-weight: bold;
+                font-size:90%;
+                font-family:monospace;
+                color:rgb(0,105,198);
+            }
+            #footerMiddleSide2Text{
+                margin-left:0.5%;
+                margin-top:-18%;
+                font-size:140%;
+            }
+            #footerMiddleSide2NotmainText{
+                font-size:75%;
+                margin-top:-7%;
+            }
+            #footerMiddleSide2textLink{
+                margin-top:-1%;
+                font-weight: bold;
+                font-size:90%;
+                font-family:monospace;
+                color:rgb(0,105,198);
+            }
+
+            #footerRightSideText{
+                margin-left:-1%;
+                margin-top:-18%;
+                font-size:140%;
+            }
+            #footerRightSideNotmainText{
+                font-size:75%;
+                margin-top:-7%;
+            }
+            #footerRightSidetextLink{
+                margin-top:-1%;
+                font-weight: bold;
+                font-size:90%;
+                font-family:monospace;
+                color:rgb(0,105,198);
+            }
+            #sixpeoples{
+                position:absolute;
+                margin-top:-12%;
+                margin-left:5.35%;
+                height:6%;
+                width:11.5%;
+                font-weight: bold;
+                font-size:90%;
+                color:white;
+                background-color: black;
+                border:1px solid black;
+            
+            }
+            #onepeople{
+                position:absolute;
+                margin-top:-12%;
+                margin-left:21%;
+                height:6%;
+                width:11.5%;
+                font-weight: bold;
+                font-size:90%;
+                color:black;
+                background-color: rgb(231,231,231);
+                border:1px solid rgb(231,231,231);
+            }
+            a:link {
+                background-color: transparent;
+                text-decoration: none;
+                padding-right:0.5%;
+            }
+            a:visited {
+                color: black;
+                background-color: transparent;
+                text-decoration: none;
+                padding-right:0.5%;
+            }
+            a:hover {
+                color:black;
+                background-color: transparent;
+                text-decoration: underline;
+                padding-right:0.5%;
+            }
