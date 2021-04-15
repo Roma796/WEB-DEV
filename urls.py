@@ -1,10 +1,11 @@
-from django.urls import path
-from api.views import product_list,product_detail,category_list,category_detail
+from django.conf.urls import url
+from api.views import company_list, vacancies_list, vacancy_detail, company_detail, vacancies_by_company,top_ten
 
-urlpatterns=[
-    path('products/',product_list),
-    path('products/<int:product_id>/',product_detail),
-    path('categories/',category_list),
-    path('categories/<int:category_id>/',category_detail)
-
+urlpatterns = [
+  url('companies/', company_list),
+  url('companies/<int:company_id>/', company_detail),
+  url('vacancies/', vacancies_list),
+  url('vacancies/<int:vacancy_id>/', vacancy_detail),
+  url('companies/<int:vacancies_id>/vacancies', vacancies_by_company),
+  url('vacancies/top_ten/', top_ten)
 ]
